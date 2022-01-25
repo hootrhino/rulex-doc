@@ -13,3 +13,15 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+.DS_Store
+
+.idea
+node_modules
+
+db.json
+themes/doc
+tests_output
+
+*.log
+*.lock
