@@ -31,5 +31,5 @@ jobs:
           git-config-name: github-actions[bot]
           git-config-email: github-actions[bot]@users.noreply.github.com
           branch: gh-pages
-          token: ${{ github.token }}
+          token: ${{ github.RULEX_DOC_CI }}
           folder: src/.vuepress/dist
