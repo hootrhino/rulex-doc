@@ -1,2 +1,1 @@
-# rulex-doc
-Documentation for Rulex.
+# RULEX Document page
