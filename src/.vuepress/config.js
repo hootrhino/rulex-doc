@@ -30,6 +30,7 @@ module.exports = {
           children: [
             '/quickstart/download.html',
             '/quickstart/compile.html',
+            '/quickstart/docker.html',
           ]
         },
       ],
