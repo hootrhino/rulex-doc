@@ -24,14 +24,15 @@ footerWrap:
 - title: 交流社区
   item:
   - text: QQ群：608382561
+
 - title: 技术博客
   item:
   - text: 来躺平新青年
     link: https://wwhai.github.io
-- title: 友情链接
+
+- title: 联系邮箱
   item:
-  - text: 来躺平新青年
-    link: https://wwhai.github.io
+  - text: cnwwhai@gmail.com
 ---
 
 <img src="/assets/home1.png" style="box-shadow: 20px 20px 50px grey;border-radius: 10px;"></img>

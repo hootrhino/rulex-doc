@@ -20,7 +20,7 @@ module.exports = {
       { text: '快速上手', link: '/quickstart/index.html' },
       { text: 'V1.0文档', link: '/V10/index.html' },
       { text: '案例应用', link: '/apply/index.html' },
-      { text: '自研产品', link: '/product/index.html' },
+      { text: 'RULEX生态', link: '/ecosystem/index.html' },
     ],
     sidebar: {
       '/quickstart/': [
@@ -67,6 +67,17 @@ module.exports = {
         {
           title: "自研产品",
           collapsable: false,
+        },
+      ],
+      '/ecosystem/': [
+        {
+          title: "RULEX生态",
+          collapsable: false,
+          children: [
+            '/ecosystem/things_broker.html',
+            '/ecosystem/iabus.html',
+            '/ecosystem/ilex.html',
+          ]
         },
       ],
     },
