@@ -31,6 +31,7 @@ module.exports = {
             '/quickstart/download.html',
             '/quickstart/compile.html',
             '/quickstart/docker.html',
+            '/quickstart/cli.html',
           ]
         },
       ],
