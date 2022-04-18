@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>1-数据资源 | RULEX</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="RULEX是一个轻量级物联网边缘网关开发框架">
+    
+    <link rel="preload" href="/assets/css/0.styles.70ec367d.css" as="style"><link rel="preload" href="/assets/js/app.6c0f2303.js" as="script"><link rel="preload" href="/assets/js/2.fffe9983.js" as="script"><link rel="preload" href="/assets/js/3.204b2230.js" as="script"><link rel="preload" href="/assets/js/6.3061fe43.js" as="script"><link rel="prefetch" href="/assets/js/10.88bbd787.js"><link rel="prefetch" href="/assets/js/11.4ac98fcd.js"><link rel="prefetch" href="/assets/js/12.b2c6b23f.js"><link rel="prefetch" href="/assets/js/13.db36fe3b.js"><link rel="prefetch" href="/assets/js/14.eed06ee4.js"><link rel="prefetch" href="/assets/js/15.018f1913.js"><link rel="prefetch" href="/assets/js/16.11b5991c.js"><link rel="prefetch" href="/assets/js/17.e884a8d6.js"><link rel="prefetch" href="/assets/js/18.87f43a4d.js"><link rel="prefetch" href="/assets/js/19.056a3d96.js"><link rel="prefetch" href="/assets/js/20.df45266b.js"><link rel="prefetch" href="/assets/js/21.9a146423.js"><link rel="prefetch" href="/assets/js/22.b0d38e57.js"><link rel="prefetch" href="/assets/js/23.eaf37617.js"><link rel="prefetch" href="/assets/js/24.7870c522.js"><link rel="prefetch" href="/assets/js/25.11ac52c8.js"><link rel="prefetch" href="/assets/js/26.97291da2.js"><link rel="prefetch" href="/assets/js/27.76b19c49.js"><link rel="prefetch" href="/assets/js/28.9b9d2726.js"><link rel="prefetch" href="/assets/js/29.0e89dd25.js"><link rel="prefetch" href="/assets/js/30.9a47b6df.js"><link rel="prefetch" href="/assets/js/4.cfa56204.js"><link rel="prefetch" href="/assets/js/5.b8900c65.js"><link rel="prefetch" href="/assets/js/7.eaa41519.js"><link rel="prefetch" href="/assets/js/8.890f7197.js"><link rel="prefetch" href="/assets/js/9.694d67d0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.70ec367d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/logo.png" alt="RULEX" class="logo"> <span class="site-name">RULEX</span></a> <nav class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <ul class="nav-links can-hide"><li class="nav-item"><a href="/" class="nav-link"><!----> <span>首页</span></a></li><li class="nav-item"><a href="/quickstart/index.html" class="nav-link"><!----> <span>快速上手</span></a></li><li class="nav-item"><a href="/V10/index.html" class="nav-link"><!----> <span>V1.0文档</span></a></li><li class="nav-item"><a href="/apply/index.html" class="nav-link"><!----> <span>案例应用</span></a></li><li class="nav-item"><a href="/ecosystem/index.html" class="nav-link"><!----> <span>RULEX生态</span></a></li> <li class="nav-item"><a href="https://github.com/i4de/rulex" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> <span>GitHub</span> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <div class="theme-switcher"><a class="switch light"><span><i aria-hidden="true" class="fa fa-sun"></i></span></a></div></nav></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!----> <ul class="nav-links"><li class="nav-item"><a href="/" class="nav-link"><!----> <span>首页</span></a></li><li class="nav-item"><a href="/quickstart/index.html" class="nav-link"><!----> <span>快速上手</span></a></li><li class="nav-item"><a href="/V10/index.html" class="nav-link"><!----> <span>V1.0文档</span></a></li><li class="nav-item"><a href="/apply/index.html" class="nav-link"><!----> <span>案例应用</span></a></li><li class="nav-item"><a href="/ecosystem/index.html" class="nav-link"><!----> <span>RULEX生态</span></a></li> <li class="nav-item"><a href="https://github.com/i4de/rulex" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> <span>GitHub</span> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><i></i> <span>1.0 文档</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/V10/1-source.html" aria-current="page" class="active sidebar-link">1-数据资源</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/V10/1-source.html#源概念" class="sidebar-link">源概念</a></li><li class="sidebar-sub-header"><a href="/V10/1-source.html#编程接口" class="sidebar-link">编程接口</a></li><li class="sidebar-sub-header"><a href="/V10/1-source.html#案例" class="sidebar-link">案例</a></li></ul></li><li><a href="/V10/2-target.html" class="sidebar-link">2-数据目标</a></li><li><a href="/V10/3-rule.html" class="sidebar-link">3-数据规则</a></li><li><a href="/V10/4-plugin.html" class="sidebar-link">4-插件设计</a></li><li><a href="/V10/5-driver.html" class="sidebar-link">5-驱动设计</a></li><li><a href="/V10/6-hook.html" class="sidebar-link">6-钩子设计</a></li><li><a href="/V10/7-stdlib.html" class="sidebar-link">7-扩展库</a></li><li><a href="/V10/8-rulexui.html" class="sidebar-link">8-UI渲染</a></li><li><a href="/V10/9-models.html" class="sidebar-link">9-数据模型</a></li><li><a href="/V10/10-daemon.html" class="sidebar-link">10-守护进程</a></li><li><a href="/V10/11-debug.html" class="sidebar-link">11-调试工具</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-vpx-content content__default"><h2 id="源概念"><a href="#源概念" class="header-anchor">#</a> 源概念</h2> <p>在 RULEX 框架内，将所有的入口数据抽象为“源”，也就是Source。</p> <h2 id="编程接口"><a href="#编程接口" class="header-anchor">#</a> 编程接口</h2> <p>自定义源只需要实现 <code>XSource</code> 接口即可：</p> <div class="language-go extra-class"><pre class="language-go"><code>
+<span class="token comment">//</span>
+<span class="token comment">// XSource: 终端资源, 比如实际上的 MQTT 客户端</span>
+<span class="token comment">//</span>
+<span class="token keyword">type</span> XSource <span class="token keyword">interface</span> <span class="token punctuation">{</span>
+	<span class="token comment">//</span>
+	<span class="token comment">// 测试资源是否可用</span>
+	<span class="token comment">//</span>
+	<span class="token function">Test</span><span class="token punctuation">(</span>inEndId <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token builtin">bool</span>
+	<span class="token comment">//</span>
+	<span class="token comment">// 用来初始化传递资源配置</span>
+	<span class="token comment">//</span>
+	<span class="token function">Init</span><span class="token punctuation">(</span>inEndId <span class="token builtin">string</span><span class="token punctuation">,</span> cfg <span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token keyword">interface</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token builtin">error</span>
+	<span class="token comment">//</span>
+	<span class="token comment">// 启动资源</span>
+	<span class="token comment">//</span>
+	<span class="token function">Start</span><span class="token punctuation">(</span>CCTX<span class="token punctuation">)</span> <span class="token builtin">error</span>
+	<span class="token comment">//</span>
+	<span class="token comment">// 资源是否被启用</span>
+	<span class="token comment">//</span>
+	<span class="token function">Enabled</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">bool</span>
+	<span class="token comment">//</span>
+	<span class="token comment">// 数据模型, 用来描述该资源支持的数据, 对应的是云平台的物模型</span>
+	<span class="token comment">//</span>
+	<span class="token function">DataModels</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>XDataModel
+	<span class="token comment">//</span>
+	<span class="token comment">// 获取前端表单定义</span>
+	<span class="token comment">//</span>
+	<span class="token function">Configs</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span>XConfig
+	<span class="token comment">//</span>
+	<span class="token comment">// 重载: 比如可以在重启的时候把某些数据保存起来</span>
+	<span class="token comment">//</span>
+	<span class="token function">Reload</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token comment">//</span>
+	<span class="token comment">// 挂起资源, 用来做暂停资源使用</span>
+	<span class="token comment">//</span>
+	<span class="token function">Pause</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token comment">//</span>
+	<span class="token comment">// 获取资源状态</span>
+	<span class="token comment">//</span>
+	<span class="token function">Status</span><span class="token punctuation">(</span><span class="token punctuation">)</span> SourceState
+	<span class="token comment">//</span>
+	<span class="token comment">// 获取资源绑定的的详情</span>
+	<span class="token comment">//</span>
+	<span class="token function">Details</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span>InEnd
+	<span class="token comment">//</span>
+	<span class="token comment">// 不经过规则引擎处理的直达数据接口, 此处建议处理一些直接控制源相关的业务，比如状态同步，控制底层硬件驱动等</span>
+	<span class="token comment">//</span>
+	<span class="token function">OnStreamApproached</span><span class="token punctuation">(</span>data <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token builtin">error</span>
+	<span class="token comment">//</span>
+	<span class="token comment">// 驱动接口, 通常用来和硬件交互</span>
+	<span class="token comment">//</span>
+	<span class="token function">Driver</span><span class="token punctuation">(</span><span class="token punctuation">)</span> XExternalDriver
+	<span class="token comment">//</span>
+	<span class="token comment">// 拓扑结构</span>
+	<span class="token comment">//</span>
+	<span class="token function">Topology</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>TopologyPoint
+	<span class="token comment">//</span>
+	<span class="token comment">// 停止资源, 用来释放资源</span>
+	<span class="token comment">//</span>
+	<span class="token function">Stop</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><h2 id="案例"><a href="#案例" class="header-anchor">#</a> 案例</h2> <p>下面我们看一个最简单的源 HTTP Server：</p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> source
+
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+	<span class="token string">&quot;context&quot;</span>
+	<span class="token string">&quot;fmt&quot;</span>
+	<span class="token string">&quot;net/http&quot;</span>
+	<span class="token string">&quot;rulex/core&quot;</span>
+	<span class="token string">&quot;rulex/typex&quot;</span>
+	<span class="token string">&quot;rulex/utils&quot;</span>
+
+	<span class="token string">&quot;github.com/gin-gonic/gin&quot;</span>
+	<span class="token string">&quot;github.com/ngaut/log&quot;</span>
+<span class="token punctuation">)</span>
+
+<span class="token comment">//</span>
+<span class="token keyword">type</span> httpConfig <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+	Port       <span class="token builtin">uint16</span>             <span class="token string">`json:&quot;port&quot; validate:&quot;required&quot; title:&quot;端口&quot; info:&quot;&quot;`</span>
+	DataModels <span class="token punctuation">[</span><span class="token punctuation">]</span>typex<span class="token punctuation">.</span>XDataModel <span class="token string">`json:&quot;dataModels&quot; title:&quot;数据模型&quot; info:&quot;&quot;`</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//</span>
+<span class="token keyword">type</span> httpInEndSource <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+	typex<span class="token punctuation">.</span>XStatus
+	engine <span class="token operator">*</span>gin<span class="token punctuation">.</span>Engine
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">NewHttpInEndSource</span><span class="token punctuation">(</span>inEndId <span class="token builtin">string</span><span class="token punctuation">,</span> e typex<span class="token punctuation">.</span>RuleX<span class="token punctuation">)</span> typex<span class="token punctuation">.</span>XSource <span class="token punctuation">{</span>
+	h <span class="token operator">:=</span> httpInEndSource<span class="token punctuation">{</span><span class="token punctuation">}</span>
+	h<span class="token punctuation">.</span>PointId <span class="token operator">=</span> inEndId
+	gin<span class="token punctuation">.</span><span class="token function">SetMode</span><span class="token punctuation">(</span>gin<span class="token punctuation">.</span>ReleaseMode<span class="token punctuation">)</span>
+	h<span class="token punctuation">.</span>engine <span class="token operator">=</span> gin<span class="token punctuation">.</span><span class="token function">New</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	h<span class="token punctuation">.</span>RuleEngine <span class="token operator">=</span> e
+	<span class="token keyword">return</span> <span class="token operator">&amp;</span>h
+<span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span><span class="token operator">*</span>httpInEndSource<span class="token punctuation">)</span> <span class="token function">Configs</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span>typex<span class="token punctuation">.</span>XConfig <span class="token punctuation">{</span>
+	<span class="token keyword">return</span> core<span class="token punctuation">.</span><span class="token function">GenInConfig</span><span class="token punctuation">(</span>typex<span class="token punctuation">.</span>HTTP<span class="token punctuation">,</span> <span class="token string">&quot;HTTP&quot;</span><span class="token punctuation">,</span> httpConfig<span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>hh <span class="token operator">*</span>httpInEndSource<span class="token punctuation">)</span> <span class="token function">Start</span><span class="token punctuation">(</span>cctx typex<span class="token punctuation">.</span>CCTX<span class="token punctuation">)</span> <span class="token builtin">error</span> <span class="token punctuation">{</span>
+	hh<span class="token punctuation">.</span>Ctx <span class="token operator">=</span> cctx<span class="token punctuation">.</span>Ctx
+	hh<span class="token punctuation">.</span>CancelCTX <span class="token operator">=</span> cctx<span class="token punctuation">.</span>CancelCTX
+
+	config <span class="token operator">:=</span> hh<span class="token punctuation">.</span>RuleEngine<span class="token punctuation">.</span><span class="token function">GetInEnd</span><span class="token punctuation">(</span>hh<span class="token punctuation">.</span>PointId<span class="token punctuation">)</span><span class="token punctuation">.</span>Config
+	<span class="token keyword">var</span> mainConfig httpConfig
+	<span class="token keyword">if</span> err <span class="token operator">:=</span> utils<span class="token punctuation">.</span><span class="token function">BindSourceConfig</span><span class="token punctuation">(</span>config<span class="token punctuation">,</span> <span class="token operator">&amp;</span>mainConfig<span class="token punctuation">)</span><span class="token punctuation">;</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> err
+	<span class="token punctuation">}</span>
+	hh<span class="token punctuation">.</span>engine<span class="token punctuation">.</span><span class="token function">POST</span><span class="token punctuation">(</span><span class="token string">&quot;/in&quot;</span><span class="token punctuation">,</span> <span class="token keyword">func</span><span class="token punctuation">(</span>c <span class="token operator">*</span>gin<span class="token punctuation">.</span>Context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">type</span> Form <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+			Data <span class="token builtin">string</span>
+		<span class="token punctuation">}</span>
+		<span class="token keyword">var</span> inForm Form
+		err <span class="token operator">:=</span> c<span class="token punctuation">.</span><span class="token function">BindJSON</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>inForm<span class="token punctuation">)</span>
+		<span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+			c<span class="token punctuation">.</span><span class="token function">JSON</span><span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">,</span> gin<span class="token punctuation">.</span>H<span class="token punctuation">{</span>
+				<span class="token string">&quot;message&quot;</span><span class="token punctuation">:</span> err<span class="token punctuation">.</span><span class="token function">Error</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+			<span class="token punctuation">}</span><span class="token punctuation">)</span>
+		<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+			hh<span class="token punctuation">.</span>RuleEngine<span class="token punctuation">.</span><span class="token function">Work</span><span class="token punctuation">(</span>hh<span class="token punctuation">.</span>RuleEngine<span class="token punctuation">.</span><span class="token function">GetInEnd</span><span class="token punctuation">(</span>hh<span class="token punctuation">.</span>PointId<span class="token punctuation">)</span><span class="token punctuation">,</span> inForm<span class="token punctuation">.</span>Data<span class="token punctuation">)</span>
+			c<span class="token punctuation">.</span><span class="token function">JSON</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">,</span> gin<span class="token punctuation">.</span>H<span class="token punctuation">{</span>
+				<span class="token string">&quot;message&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;ok&quot;</span><span class="token punctuation">,</span>
+				<span class="token string">&quot;data&quot;</span><span class="token punctuation">:</span>    inForm<span class="token punctuation">,</span>
+			<span class="token punctuation">}</span><span class="token punctuation">)</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+	<span class="token keyword">go</span> <span class="token keyword">func</span><span class="token punctuation">(</span>ctx context<span class="token punctuation">.</span>Context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		err <span class="token operator">:=</span> http<span class="token punctuation">.</span><span class="token function">ListenAndServe</span><span class="token punctuation">(</span>fmt<span class="token punctuation">.</span><span class="token function">Sprintf</span><span class="token punctuation">(</span><span class="token string">&quot;:%v&quot;</span><span class="token punctuation">,</span> mainConfig<span class="token punctuation">.</span>Port<span class="token punctuation">)</span><span class="token punctuation">,</span> hh<span class="token punctuation">.</span>engine<span class="token punctuation">)</span>
+		<span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+			log<span class="token punctuation">.</span><span class="token function">Error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+			<span class="token keyword">return</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span><span class="token punctuation">(</span>hh<span class="token punctuation">.</span>Ctx<span class="token punctuation">)</span>
+	log<span class="token punctuation">.</span><span class="token function">Info</span><span class="token punctuation">(</span><span class="token string">&quot;HTTP source started on&quot;</span> <span class="token operator">+</span> <span class="token string">&quot; [0.0.0.0]:&quot;</span> <span class="token operator">+</span> fmt<span class="token punctuation">.</span><span class="token function">Sprintf</span><span class="token punctuation">(</span><span class="token string">&quot;%v&quot;</span><span class="token punctuation">,</span> mainConfig<span class="token punctuation">.</span>Port<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+	<span class="token keyword">return</span> <span class="token boolean">nil</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>mm <span class="token operator">*</span>httpInEndSource<span class="token punctuation">)</span> <span class="token function">DataModels</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>typex<span class="token punctuation">.</span>XDataModel <span class="token punctuation">{</span>
+	<span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>typex<span class="token punctuation">.</span>XDataModel<span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>hh <span class="token operator">*</span>httpInEndSource<span class="token punctuation">)</span> <span class="token function">Stop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	hh<span class="token punctuation">.</span><span class="token function">CancelCTX</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>hh <span class="token operator">*</span>httpInEndSource<span class="token punctuation">)</span> <span class="token function">Reload</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>hh <span class="token operator">*</span>httpInEndSource<span class="token punctuation">)</span> <span class="token function">Pause</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>hh <span class="token operator">*</span>httpInEndSource<span class="token punctuation">)</span> <span class="token function">Status</span><span class="token punctuation">(</span><span class="token punctuation">)</span> typex<span class="token punctuation">.</span>SourceState <span class="token punctuation">{</span>
+	<span class="token keyword">return</span> typex<span class="token punctuation">.</span>UP
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token punctuation">(</span>hh <span class="token operator">*</span>httpInEndSource<span class="token punctuation">)</span> <span class="token function">Init</span><span class="token punctuation">(</span>inEndId <span class="token builtin">string</span><span class="token punctuation">,</span> cfg <span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token keyword">interface</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token builtin">error</span> <span class="token punctuation">{</span>
+	hh<span class="token punctuation">.</span>PointId <span class="token operator">=</span> inEndId
+	<span class="token keyword">return</span> <span class="token boolean">nil</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>hh <span class="token operator">*</span>httpInEndSource<span class="token punctuation">)</span> <span class="token function">Test</span><span class="token punctuation">(</span>inEndId <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token builtin">bool</span> <span class="token punctuation">{</span>
+	<span class="token keyword">return</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token punctuation">(</span>hh <span class="token operator">*</span>httpInEndSource<span class="token punctuation">)</span> <span class="token function">Enabled</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">bool</span> <span class="token punctuation">{</span>
+	<span class="token keyword">return</span> hh<span class="token punctuation">.</span>Enable
+<span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>hh <span class="token operator">*</span>httpInEndSource<span class="token punctuation">)</span> <span class="token function">Details</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span>typex<span class="token punctuation">.</span>InEnd <span class="token punctuation">{</span>
+	<span class="token keyword">return</span> hh<span class="token punctuation">.</span>RuleEngine<span class="token punctuation">.</span><span class="token function">GetInEnd</span><span class="token punctuation">(</span>hh<span class="token punctuation">.</span>PointId<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>m <span class="token operator">*</span>httpInEndSource<span class="token punctuation">)</span> <span class="token function">OnStreamApproached</span><span class="token punctuation">(</span>data <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token builtin">error</span> <span class="token punctuation">{</span>
+	<span class="token keyword">return</span> <span class="token boolean">nil</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span><span class="token operator">*</span>httpInEndSource<span class="token punctuation">)</span> <span class="token function">Driver</span><span class="token punctuation">(</span><span class="token punctuation">)</span> typex<span class="token punctuation">.</span>XExternalDriver <span class="token punctuation">{</span>
+	<span class="token keyword">return</span> <span class="token boolean">nil</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//</span>
+<span class="token comment">// 拓扑</span>
+<span class="token comment">//</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span><span class="token operator">*</span>httpInEndSource<span class="token punctuation">)</span> <span class="token function">Topology</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>typex<span class="token punctuation">.</span>TopologyPoint <span class="token punctuation">{</span>
+	<span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>typex<span class="token punctuation">.</span>TopologyPoint<span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><p>上面是一个简单的HTTP接口提供服务。</p></div> <div class="page-edit"><span class="edit-link"><a href="https://github.com/i4de/rulex/edit/master/src/V10/1-source.md" target="_blank" rel="noopener noreferrer">编辑当前页</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></span> <!----></div> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/V10/2-target.html">
+        2-数据目标
+      </a>
+      →
+    </span></p></div> <div class="page-footer"><ul class="inner"><li>Theme by <a href="https://gitee.com/qcyblm/vuepress-theme-vpx" title="本站主题" target="_blank" rel="noopener noreferrer">VPX</a></li> <li>Powered by <a href="https://www.vuepress.cn/" target="_blank" rel="noopener noreferrer">VuePress</a></li> <li><a href="https://github.com/i4de/rulex/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">GPL2</a> Licensed
+    </li> <li>
+      Copyright © 2022
+      <a href="https://github.com/i4de/rulex" target="_blank" rel="noopener noreferrer"> RULEX </a></li> <!----> <li><a href="https://wwhai.github.io/" target="_blank" rel="noopener noreferrer">个人主页</a></li></ul></div> </main> <!----></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.6c0f2303.js" defer></script><script src="/assets/js/2.fffe9983.js" defer></script><script src="/assets/js/3.204b2230.js" defer></script><script src="/assets/js/6.3061fe43.js" defer></script>
+  </body>
+</html>
