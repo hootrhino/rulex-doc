@@ -79,6 +79,7 @@ module.exports = {
             // '/ecosystem/things_broker.html',
             // '/ecosystem/iabus.html',
             '/ecosystem/ilex.html',
+            '/ecosystem/supported_dev.html',
           ]
         },
       ],
