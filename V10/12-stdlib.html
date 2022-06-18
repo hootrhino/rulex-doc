@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>12-RULEX 标准库 | RULEX</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="RULEX是一个轻量级物联网边缘网关开发框架">
+    
+    <link rel="preload" href="/assets/css/0.styles.70ec367d.css" as="style"><link rel="preload" href="/assets/js/app.cb4e4fed.js" as="script"><link rel="preload" href="/assets/js/2.26a78216.js" as="script"><link rel="preload" href="/assets/js/3.204b2230.js" as="script"><link rel="preload" href="/assets/js/9.c86942a6.js" as="script"><link rel="prefetch" href="/assets/js/10.52ff436b.js"><link rel="prefetch" href="/assets/js/11.d235b570.js"><link rel="prefetch" href="/assets/js/12.2c48bf9c.js"><link rel="prefetch" href="/assets/js/13.9e101a9c.js"><link rel="prefetch" href="/assets/js/14.27c7a777.js"><link rel="prefetch" href="/assets/js/15.f1fd9e77.js"><link rel="prefetch" href="/assets/js/16.00a5cd08.js"><link rel="prefetch" href="/assets/js/17.d75cf7f9.js"><link rel="prefetch" href="/assets/js/18.44ae4a1e.js"><link rel="prefetch" href="/assets/js/19.a95c1b3a.js"><link rel="prefetch" href="/assets/js/20.d74c2639.js"><link rel="prefetch" href="/assets/js/21.f46f4b68.js"><link rel="prefetch" href="/assets/js/22.93a7e086.js"><link rel="prefetch" href="/assets/js/23.251f07cf.js"><link rel="prefetch" href="/assets/js/24.fdc5f6a9.js"><link rel="prefetch" href="/assets/js/25.03c21d10.js"><link rel="prefetch" href="/assets/js/26.4361d280.js"><link rel="prefetch" href="/assets/js/27.59dcf4d5.js"><link rel="prefetch" href="/assets/js/28.f77f141f.js"><link rel="prefetch" href="/assets/js/29.e5bc3f98.js"><link rel="prefetch" href="/assets/js/30.d31f5669.js"><link rel="prefetch" href="/assets/js/31.1f25bb8c.js"><link rel="prefetch" href="/assets/js/32.7b65a32c.js"><link rel="prefetch" href="/assets/js/33.24f8ae78.js"><link rel="prefetch" href="/assets/js/4.f0fc3602.js"><link rel="prefetch" href="/assets/js/5.b8900c65.js"><link rel="prefetch" href="/assets/js/6.3061fe43.js"><link rel="prefetch" href="/assets/js/7.eaa41519.js"><link rel="prefetch" href="/assets/js/8.5ea6662b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.70ec367d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/logo.png" alt="RULEX" class="logo"> <span class="site-name">RULEX</span></a> <nav class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <ul class="nav-links can-hide"><li class="nav-item"><a href="/" class="nav-link"><!----> <span>首页</span></a></li><li class="nav-item"><a href="/quickstart/index.html" class="nav-link"><!----> <span>快速上手</span></a></li><li class="nav-item"><a href="/V10/index.html" class="nav-link"><!----> <span>V1.0文档</span></a></li><li class="nav-item"><a href="/apply/index.html" class="nav-link"><!----> <span>案例应用</span></a></li><li class="nav-item"><a href="/ecosystem/index.html" class="nav-link"><!----> <span>RULEX生态</span></a></li> <li class="nav-item"><a href="https://github.com/i4de/rulex" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> <span>GitHub</span> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <div class="theme-switcher"><a class="switch light"><span><i aria-hidden="true" class="fa fa-sun"></i></span></a></div></nav></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!----> <ul class="nav-links"><li class="nav-item"><a href="/" class="nav-link"><!----> <span>首页</span></a></li><li class="nav-item"><a href="/quickstart/index.html" class="nav-link"><!----> <span>快速上手</span></a></li><li class="nav-item"><a href="/V10/index.html" class="nav-link"><!----> <span>V1.0文档</span></a></li><li class="nav-item"><a href="/apply/index.html" class="nav-link"><!----> <span>案例应用</span></a></li><li class="nav-item"><a href="/ecosystem/index.html" class="nav-link"><!----> <span>RULEX生态</span></a></li> <li class="nav-item"><a href="https://github.com/i4de/rulex" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> <span>GitHub</span> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><i></i> <span>1.0 文档</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/V10/1-source.html" class="sidebar-link">1-数据资源</a></li><li><a href="/V10/2-target.html" class="sidebar-link">2-数据目标</a></li><li><a href="/V10/3-rule.html" class="sidebar-link">3-数据规则</a></li><li><a href="/V10/4-plugin.html" class="sidebar-link">4-插件设计</a></li><li><a href="/V10/5-driver.html" class="sidebar-link">5-驱动设计</a></li><li><a href="/V10/6-hook.html" class="sidebar-link">6-钩子设计</a></li><li><a href="/V10/7-stdlib.html" class="sidebar-link">7-扩展库</a></li><li><a href="/V10/8-rulexui.html" class="sidebar-link">8-UI渲染</a></li><li><a href="/V10/9-models.html" class="sidebar-link">9-数据模型</a></li><li><a href="/V10/10-daemon.html" class="sidebar-link">10-守护进程</a></li><li><a href="/V10/11-debug.html" class="sidebar-link">11-调试工具</a></li><li><a href="/V10/12-stdlib.html" aria-current="page" class="active sidebar-link">12-RULEX 标准库</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/V10/12-stdlib.html#_1-消息转发" class="sidebar-link">1. 消息转发</a></li><li class="sidebar-sub-header"><a href="/V10/12-stdlib.html#_2-jq处理" class="sidebar-link">2. JQ处理</a></li><li class="sidebar-sub-header"><a href="/V10/12-stdlib.html#_3-日志输出" class="sidebar-link">3. 日志输出</a></li><li class="sidebar-sub-header"><a href="/V10/12-stdlib.html#_4-直达数据" class="sidebar-link">4. 直达数据</a></li><li class="sidebar-sub-header"><a href="/V10/12-stdlib.html#_5-二进制操作" class="sidebar-link">5. 二进制操作</a></li><li class="sidebar-sub-header"><a href="/V10/12-stdlib.html#_6-url处理" class="sidebar-link">6. URL处理</a></li><li class="sidebar-sub-header"><a href="/V10/12-stdlib.html#_7-数据持久化" class="sidebar-link">7. 数据持久化</a></li><li class="sidebar-sub-header"><a href="/V10/12-stdlib.html#_8-时间操作" class="sidebar-link">8. 时间操作</a></li><li class="sidebar-sub-header"><a href="/V10/12-stdlib.html#_9-缓存器库" class="sidebar-link">9. 缓存器库</a></li><li class="sidebar-sub-header"><a href="/V10/12-stdlib.html#_10-json编解码" class="sidebar-link">10. JSON编解码</a></li><li class="sidebar-sub-header"><a href="/V10/12-stdlib.html#_11-rpc编解码" class="sidebar-link">11. RPC编解码</a></li><li class="sidebar-sub-header"><a href="/V10/12-stdlib.html#_12-辅助类库" class="sidebar-link">12. 辅助类库</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-vpx-content content__default"><h2 id="_1-消息转发"><a href="#_1-消息转发" class="header-anchor">#</a> 1. 消息转发</h2> <h3 id="数据转mqtt-server"><a href="#数据转mqtt-server" class="header-anchor">#</a> 数据转MQTT Server</h3> <h4 id="函数定义"><a href="#函数定义" class="header-anchor">#</a> 函数定义</h4> <table><thead><tr><th>函数名</th> <th>参数</th> <th>返回值</th> <th>说明</th></tr></thead> <tbody><tr><td>DataToMqtt</td> <td>data:string</td> <td>error:string</td> <td>数据转发到另一个 MQTT Server</td></tr></tbody></table> <h4 id="示例"><a href="#示例" class="header-anchor">#</a> 示例</h4> <p>首先新建好资源，然后编写脚本:</p> <div class="language-lua extra-class"><pre class="language-lua"><code><span class="token comment">-- Success</span>
+<span class="token keyword">function</span> <span class="token function">Success</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;success&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+<span class="token comment">-- Failed</span>
+<span class="token keyword">function</span> <span class="token function">Failed</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;failed:&quot;</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+
+<span class="token comment">-- Actions</span>
+Actions <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token keyword">function</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+        rulexlib<span class="token punctuation">:</span><span class="token function">DataToMqtt</span><span class="token punctuation">(</span><span class="token string">'UUID'</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token keyword">true</span><span class="token punctuation">,</span> data
+    <span class="token keyword">end</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><h3 id="数据转http-server"><a href="#数据转http-server" class="header-anchor">#</a> 数据转HTTP Server</h3> <h4 id="函数定义-2"><a href="#函数定义-2" class="header-anchor">#</a> 函数定义</h4> <table><thead><tr><th>函数名</th> <th>参数</th> <th>返回值</th> <th>说明</th></tr></thead> <tbody><tr><td>DataToHttp</td> <td>data:string</td> <td>error:string</td> <td>数据转发到另一个 HTTP Server</td></tr></tbody></table> <h4 id="示例-2"><a href="#示例-2" class="header-anchor">#</a> 示例</h4> <p>首先新建好资源，然后编写脚本:</p> <div class="language-lua extra-class"><pre class="language-lua"><code><span class="token comment">-- Success</span>
+<span class="token keyword">function</span> <span class="token function">Success</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;success&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+<span class="token comment">-- Failed</span>
+<span class="token keyword">function</span> <span class="token function">Failed</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;failed:&quot;</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+
+<span class="token comment">-- Actions</span>
+Actions <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token keyword">function</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+        rulexlib<span class="token punctuation">:</span><span class="token function">DataToHttp</span><span class="token punctuation">(</span><span class="token string">'UUID'</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token keyword">true</span><span class="token punctuation">,</span> data
+    <span class="token keyword">end</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_2-jq处理"><a href="#_2-jq处理" class="header-anchor">#</a> 2. JQ处理</h2> <h3 id="jq支持"><a href="#jq支持" class="header-anchor">#</a> JQ支持</h3> <h4 id="函数定义-3"><a href="#函数定义-3" class="header-anchor">#</a> 函数定义</h4> <table><thead><tr><th>函数名</th> <th>参数</th> <th>返回值</th> <th>说明</th></tr></thead> <tbody><tr><td>JQ</td> <td>data:string</td> <td>error:string</td> <td>JQ筛选，语法请看:https://stedolan.github.io/jq</td></tr></tbody></table> <h4 id="示例-3"><a href="#示例-3" class="header-anchor">#</a> 示例</h4> <p>首先新建好资源，然后编写脚本:</p> <div class="language-lua extra-class"><pre class="language-lua"><code><span class="token comment">-- Success</span>
+<span class="token keyword">function</span> <span class="token function">Success</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;success&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+<span class="token comment">-- Failed</span>
+<span class="token keyword">function</span> <span class="token function">Failed</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;failed:&quot;</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+
+<span class="token comment">-- Actions</span>
+Actions <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token keyword">function</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+        rulexlib<span class="token punctuation">:</span><span class="token function">JQ</span><span class="token punctuation">(</span><span class="token string">'.[]'</span><span class="token punctuation">,</span>data<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token keyword">true</span><span class="token punctuation">,</span> data
+    <span class="token keyword">end</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_3-日志输出"><a href="#_3-日志输出" class="header-anchor">#</a> 3. 日志输出</h2> <h3 id="向文件输出日志"><a href="#向文件输出日志" class="header-anchor">#</a> 向文件输出日志</h3> <h4 id="函数定义-4"><a href="#函数定义-4" class="header-anchor">#</a> 函数定义</h4> <table><thead><tr><th>函数名</th> <th>参数</th> <th>返回值</th> <th>说明</th></tr></thead> <tbody><tr><td>log</td> <td>data:string</td> <td>error:string</td> <td>打印日志到文件</td></tr></tbody></table> <h4 id="示例-4"><a href="#示例-4" class="header-anchor">#</a> 示例</h4> <p>首先新建好资源，然后编写脚本:</p> <div class="language-lua extra-class"><pre class="language-lua"><code><span class="token comment">-- Success</span>
+<span class="token keyword">function</span> <span class="token function">Success</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;success&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+<span class="token comment">-- Failed</span>
+<span class="token keyword">function</span> <span class="token function">Failed</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;failed:&quot;</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+
+<span class="token comment">-- Actions</span>
+Actions <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token keyword">function</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+        rulexlib<span class="token punctuation">:</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token keyword">true</span><span class="token punctuation">,</span> data
+    <span class="token keyword">end</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_4-直达数据"><a href="#_4-直达数据" class="header-anchor">#</a> 4. 直达数据</h2> <h3 id="输入到源"><a href="#输入到源" class="header-anchor">#</a> 输入到源</h3> <h4 id="函数定义-5"><a href="#函数定义-5" class="header-anchor">#</a> 函数定义</h4> <table><thead><tr><th>函数名</th> <th>参数</th> <th>返回值</th> <th>说明</th></tr></thead> <tbody><tr><td>WriteInStream</td> <td>uuid:string, data:string</td> <td>error:string</td> <td>数据直接写向某个源</td></tr></tbody></table> <h4 id="示例-5"><a href="#示例-5" class="header-anchor">#</a> 示例</h4> <p>首先新建好资源，然后编写脚本:</p> <div class="language-lua extra-class"><pre class="language-lua"><code><span class="token comment">-- Success</span>
+<span class="token keyword">function</span> <span class="token function">Success</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;success&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+<span class="token comment">-- Failed</span>
+<span class="token keyword">function</span> <span class="token function">Failed</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;failed:&quot;</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+
+<span class="token comment">-- Actions</span>
+Actions <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token keyword">function</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+        rulexlib<span class="token punctuation">:</span><span class="token function">WriteInStream</span><span class="token punctuation">(</span><span class="token string">'UUID'</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token keyword">true</span><span class="token punctuation">,</span> data
+    <span class="token keyword">end</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="输入到目标"><a href="#输入到目标" class="header-anchor">#</a> 输入到目标</h3> <h4 id="函数定义-6"><a href="#函数定义-6" class="header-anchor">#</a> 函数定义</h4> <table><thead><tr><th>函数名</th> <th>参数</th> <th>返回值</th> <th>说明</th></tr></thead> <tbody><tr><td>WriteOutStream</td> <td>uuid:string, data:string</td> <td>error:string</td> <td>数据直接写向某个目标</td></tr></tbody></table> <h4 id="示例-6"><a href="#示例-6" class="header-anchor">#</a> 示例</h4> <p>首先新建好资源，然后编写脚本:</p> <div class="language-lua extra-class"><pre class="language-lua"><code><span class="token comment">-- Success</span>
+<span class="token keyword">function</span> <span class="token function">Success</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;success&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+<span class="token comment">-- Failed</span>
+<span class="token keyword">function</span> <span class="token function">Failed</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;failed:&quot;</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+
+<span class="token comment">-- Actions</span>
+Actions <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token keyword">function</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+        rulexlib<span class="token punctuation">:</span><span class="token function">WriteOutStream</span><span class="token punctuation">(</span><span class="token string">'UUID'</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token keyword">true</span><span class="token punctuation">,</span> data
+    <span class="token keyword">end</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_5-二进制操作"><a href="#_5-二进制操作" class="header-anchor">#</a> 5. 二进制操作</h2> <h3 id="数据转http-server-2"><a href="#数据转http-server-2" class="header-anchor">#</a> 数据转HTTP Server</h3> <h4 id="函数定义-7"><a href="#函数定义-7" class="header-anchor">#</a> 函数定义</h4> <table><thead><tr><th>函数名</th> <th>参数</th> <th>返回值</th> <th>说明</th></tr></thead> <tbody><tr><td>MB</td> <td>expression:string, data:string, returnMore:bool(0|1)</td> <td>error:string</td> <td>解析二进制数据</td></tr></tbody></table> <h4 id="示例-7"><a href="#示例-7" class="header-anchor">#</a> 示例</h4> <p>首先新建好资源，然后编写脚本:</p> <div class="language-lua extra-class"><pre class="language-lua"><code><span class="token comment">-- Success</span>
+<span class="token keyword">function</span> <span class="token function">Success</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;success&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+<span class="token comment">-- Failed</span>
+<span class="token keyword">function</span> <span class="token function">Failed</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;failed:&quot;</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+
+<span class="token comment">-- Actions</span>
+Actions <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token keyword">function</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+        rulexlib<span class="token punctuation">:</span><span class="token function">MB</span><span class="token punctuation">(</span><span class="token string">'&gt; a:8 b:16'</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token keyword">true</span><span class="token punctuation">,</span> data
+    <span class="token keyword">end</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_6-url处理"><a href="#_6-url处理" class="header-anchor">#</a> 6. URL处理</h2> <h3 id="数据转http-server-3"><a href="#数据转http-server-3" class="header-anchor">#</a> 数据转HTTP Server</h3> <h4 id="函数定义-8"><a href="#函数定义-8" class="header-anchor">#</a> 函数定义</h4> <table><thead><tr><th>函数名</th> <th>参数</th> <th>返回值</th> <th>说明</th></tr></thead> <tbody><tr><td>DataToHttp</td> <td>data:string</td> <td>error:string</td> <td>数据转发到另一个 HTTP Server</td></tr></tbody></table> <h4 id="示例-8"><a href="#示例-8" class="header-anchor">#</a> 示例</h4> <p>首先新建好资源，然后编写脚本:</p> <div class="language-lua extra-class"><pre class="language-lua"><code><span class="token comment">-- Success</span>
+<span class="token keyword">function</span> <span class="token function">Success</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;success&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+<span class="token comment">-- Failed</span>
+<span class="token keyword">function</span> <span class="token function">Failed</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;failed:&quot;</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+
+<span class="token comment">-- Actions</span>
+Actions <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token keyword">function</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+        rulexlib<span class="token punctuation">:</span><span class="token function">DataToHttp</span><span class="token punctuation">(</span><span class="token string">'UUID'</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token keyword">true</span><span class="token punctuation">,</span> data
+    <span class="token keyword">end</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_7-数据持久化"><a href="#_7-数据持久化" class="header-anchor">#</a> 7. 数据持久化</h2> <h3 id="数据转http-server-4"><a href="#数据转http-server-4" class="header-anchor">#</a> 数据转HTTP Server</h3> <h4 id="函数定义-9"><a href="#函数定义-9" class="header-anchor">#</a> 函数定义</h4> <table><thead><tr><th>函数名</th> <th>参数</th> <th>返回值</th> <th>说明</th></tr></thead> <tbody><tr><td>DataToHttp</td> <td>data:string</td> <td>error:string</td> <td>数据转发到另一个 HTTP Server</td></tr></tbody></table> <h4 id="示例-9"><a href="#示例-9" class="header-anchor">#</a> 示例</h4> <p>首先新建好资源，然后编写脚本:</p> <div class="language-lua extra-class"><pre class="language-lua"><code><span class="token comment">-- Success</span>
+<span class="token keyword">function</span> <span class="token function">Success</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;success&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+<span class="token comment">-- Failed</span>
+<span class="token keyword">function</span> <span class="token function">Failed</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;failed:&quot;</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+
+<span class="token comment">-- Actions</span>
+Actions <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token keyword">function</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+        rulexlib<span class="token punctuation">:</span><span class="token function">DataToHttp</span><span class="token punctuation">(</span><span class="token string">'UUID'</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token keyword">true</span><span class="token punctuation">,</span> data
+    <span class="token keyword">end</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_8-时间操作"><a href="#_8-时间操作" class="header-anchor">#</a> 8. 时间操作</h2> <h3 id="数据转http-server-5"><a href="#数据转http-server-5" class="header-anchor">#</a> 数据转HTTP Server</h3> <h4 id="函数定义-10"><a href="#函数定义-10" class="header-anchor">#</a> 函数定义</h4> <table><thead><tr><th>函数名</th> <th>参数</th> <th>返回值</th> <th>说明</th></tr></thead> <tbody><tr><td>DataToHttp</td> <td>data:string</td> <td>error:string</td> <td>数据转发到另一个 HTTP Server</td></tr></tbody></table> <h4 id="示例-10"><a href="#示例-10" class="header-anchor">#</a> 示例</h4> <p>首先新建好资源，然后编写脚本:</p> <div class="language-lua extra-class"><pre class="language-lua"><code><span class="token comment">-- Success</span>
+<span class="token keyword">function</span> <span class="token function">Success</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;success&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+<span class="token comment">-- Failed</span>
+<span class="token keyword">function</span> <span class="token function">Failed</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;failed:&quot;</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+
+<span class="token comment">-- Actions</span>
+Actions <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token keyword">function</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+        rulexlib<span class="token punctuation">:</span><span class="token function">DataToHttp</span><span class="token punctuation">(</span><span class="token string">'UUID'</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token keyword">true</span><span class="token punctuation">,</span> data
+    <span class="token keyword">end</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_9-缓存器库"><a href="#_9-缓存器库" class="header-anchor">#</a> 9. 缓存器库</h2> <h3 id="数据转http-server-6"><a href="#数据转http-server-6" class="header-anchor">#</a> 数据转HTTP Server</h3> <h4 id="函数定义-11"><a href="#函数定义-11" class="header-anchor">#</a> 函数定义</h4> <table><thead><tr><th>函数名</th> <th>参数</th> <th>返回值</th> <th>说明</th></tr></thead> <tbody><tr><td>DataToHttp</td> <td>data:string</td> <td>error:string</td> <td>数据转发到另一个 HTTP Server</td></tr></tbody></table> <h4 id="示例-11"><a href="#示例-11" class="header-anchor">#</a> 示例</h4> <p>首先新建好资源，然后编写脚本:</p> <div class="language-lua extra-class"><pre class="language-lua"><code><span class="token comment">-- Success</span>
+<span class="token keyword">function</span> <span class="token function">Success</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;success&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+<span class="token comment">-- Failed</span>
+<span class="token keyword">function</span> <span class="token function">Failed</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;failed:&quot;</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+
+<span class="token comment">-- Actions</span>
+Actions <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token keyword">function</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+        rulexlib<span class="token punctuation">:</span><span class="token function">DataToHttp</span><span class="token punctuation">(</span><span class="token string">'UUID'</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token keyword">true</span><span class="token punctuation">,</span> data
+    <span class="token keyword">end</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_10-json编解码"><a href="#_10-json编解码" class="header-anchor">#</a> 10. JSON编解码</h2> <h3 id="数据转http-server-7"><a href="#数据转http-server-7" class="header-anchor">#</a> 数据转HTTP Server</h3> <h4 id="函数定义-12"><a href="#函数定义-12" class="header-anchor">#</a> 函数定义</h4> <table><thead><tr><th>函数名</th> <th>参数</th> <th>返回值</th> <th>说明</th></tr></thead> <tbody><tr><td>DataToHttp</td> <td>data:string</td> <td>error:string</td> <td>数据转发到另一个 HTTP Server</td></tr></tbody></table> <h4 id="示例-12"><a href="#示例-12" class="header-anchor">#</a> 示例</h4> <p>首先新建好资源，然后编写脚本:</p> <div class="language-lua extra-class"><pre class="language-lua"><code><span class="token comment">-- Success</span>
+<span class="token keyword">function</span> <span class="token function">Success</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;success&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+<span class="token comment">-- Failed</span>
+<span class="token keyword">function</span> <span class="token function">Failed</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;failed:&quot;</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+
+<span class="token comment">-- Actions</span>
+Actions <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token keyword">function</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+        rulexlib<span class="token punctuation">:</span><span class="token function">DataToHttp</span><span class="token punctuation">(</span><span class="token string">'UUID'</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token keyword">true</span><span class="token punctuation">,</span> data
+    <span class="token keyword">end</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_11-rpc编解码"><a href="#_11-rpc编解码" class="header-anchor">#</a> 11. RPC编解码</h2> <h3 id="数据转http-server-8"><a href="#数据转http-server-8" class="header-anchor">#</a> 数据转HTTP Server</h3> <h4 id="函数定义-13"><a href="#函数定义-13" class="header-anchor">#</a> 函数定义</h4> <table><thead><tr><th>函数名</th> <th>参数</th> <th>返回值</th> <th>说明</th></tr></thead> <tbody><tr><td>DataToHttp</td> <td>data:string</td> <td>error:string</td> <td>数据转发到另一个 HTTP Server</td></tr></tbody></table> <h4 id="示例-13"><a href="#示例-13" class="header-anchor">#</a> 示例</h4> <p>首先新建好资源，然后编写脚本:</p> <div class="language-lua extra-class"><pre class="language-lua"><code><span class="token comment">-- Success</span>
+<span class="token keyword">function</span> <span class="token function">Success</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;success&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+<span class="token comment">-- Failed</span>
+<span class="token keyword">function</span> <span class="token function">Failed</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;failed:&quot;</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+
+<span class="token comment">-- Actions</span>
+Actions <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token keyword">function</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+        rulexlib<span class="token punctuation">:</span><span class="token function">DataToHttp</span><span class="token punctuation">(</span><span class="token string">'UUID'</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token keyword">true</span><span class="token punctuation">,</span> data
+    <span class="token keyword">end</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_12-辅助类库"><a href="#_12-辅助类库" class="header-anchor">#</a> 12. 辅助类库</h2> <h3 id="数据转http-server-9"><a href="#数据转http-server-9" class="header-anchor">#</a> 数据转HTTP Server</h3> <h4 id="函数定义-14"><a href="#函数定义-14" class="header-anchor">#</a> 函数定义</h4> <table><thead><tr><th>函数名</th> <th>参数</th> <th>返回值</th> <th>说明</th></tr></thead> <tbody><tr><td>DataToHttp</td> <td>data:string</td> <td>error:string</td> <td>数据转发到另一个 HTTP Server</td></tr></tbody></table> <h4 id="示例-14"><a href="#示例-14" class="header-anchor">#</a> 示例</h4> <p>首先新建好资源，然后编写脚本:</p> <div class="language-lua extra-class"><pre class="language-lua"><code><span class="token comment">-- Success</span>
+<span class="token keyword">function</span> <span class="token function">Success</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;success&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+<span class="token comment">-- Failed</span>
+<span class="token keyword">function</span> <span class="token function">Failed</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;failed:&quot;</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+
+<span class="token comment">-- Actions</span>
+Actions <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token keyword">function</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+        rulexlib<span class="token punctuation">:</span><span class="token function">DataToHttp</span><span class="token punctuation">(</span><span class="token string">'UUID'</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token keyword">true</span><span class="token punctuation">,</span> data
+    <span class="token keyword">end</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <div class="page-edit"><span class="edit-link"><a href="https://github.com/i4de/rulex/edit/master/src/V10/12-stdlib.md" target="_blank" rel="noopener noreferrer">编辑当前页</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></span> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/V10/11-debug.html" class="prev">
+        11-调试工具
+      </a></span> <!----></p></div> <div class="page-footer"><ul class="inner"><li>Theme by <a href="https://gitee.com/qcyblm/vuepress-theme-vpx" title="本站主题" target="_blank" rel="noopener noreferrer">VPX</a></li> <li>Powered by <a href="https://www.vuepress.cn/" target="_blank" rel="noopener noreferrer">VuePress</a></li> <li><a href="https://github.com/i4de/rulex/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">GPL2</a> Licensed
+    </li> <li>
+      Copyright © 2022
+      <a href="https://github.com/i4de/rulex" target="_blank" rel="noopener noreferrer"> RULEX </a></li> <!----> <li><a href="https://wwhai.github.io/" target="_blank" rel="noopener noreferrer">个人主页</a></li></ul></div> </main> <!----></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.cb4e4fed.js" defer></script><script src="/assets/js/2.26a78216.js" defer></script><script src="/assets/js/3.204b2230.js" defer></script><script src="/assets/js/9.c86942a6.js" defer></script>
+  </body>
+</html>
