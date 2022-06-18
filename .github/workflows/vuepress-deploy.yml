@@ -25,7 +25,7 @@ jobs:
         run: npm install
       - name: Build VuePress
         run: npm run build
-             curl -X POST "${{ CLOUD_CI }}"
+             curl -X POST "${{ github.CLOUD_CI }}"
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
