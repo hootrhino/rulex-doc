@@ -29,8 +29,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          git-config-name: github-actions[bot]
-          git-config-email: github-actions[bot]@users.noreply.github.com
           branch: gh-pages
-          token: ${{ github.RULEX_DOC_CI }}
           folder: src/.vuepress/dist
