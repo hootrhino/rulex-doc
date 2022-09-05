@@ -52,6 +52,9 @@ module.exports = {
             '/V10/10-daemon.html',
             '/V10/11-debug.html',
             '/V10/12-stdlib.html',
+            '/V10/13-userlib.html',
+            '/V10/14-builtin-res.html',
+            '/V10/15-user-res.html',
           ]
         },
       ],

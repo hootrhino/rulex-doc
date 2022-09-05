@@ -38,12 +38,13 @@ footerWrap:
 <img src="/assets/home1.png" style="box-shadow: 20px 20px 50px grey;border-radius: 10px;"></img>
 
 ## 更新日志
-### V0.1.0(2022-03-03)
-1. 新增RPC编解码器
-2. 新增测试用例
-3. 修复内部不规范代码
+### V0.3.3(2022-09-01)
+1. 支持用户自定义库
+2. 增加开发者高级接口
+3. 完善支持Modbus库
 4. 优化资源状态调度机制
 
 ::: info
-如需关注最新版本变化，请移步：https://github.com/i4de/rulex
+如需关注最新版本变化，请移步：https://github.com/i4de/rulex；
+或者加微信【nilyouth】，备注【rulex】后方可进群。
 :::
